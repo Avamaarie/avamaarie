@@ -1,11 +1,15 @@
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/IMG_5499.jpeg');
+    background: url('/images/IMG_5499.jpeg');
     background-size:cover;
     position:relative;
 }
-
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
@@ -22,15 +26,18 @@
     color: white;
 }
 
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+#contact {
+    padding-bottom: 4rem;
+}
 /* about section image css */
 .imageAboutPage {
     width: 100%;
-}
-
-
-/* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: black;
+    text-align: right;
 }
 
 /* services section css */
@@ -53,14 +60,13 @@
     border: 1px solid #008000;
 }
 
-
 /* social media icons styling */
 .social-icons {
-    font-size: 36px;
+    font-size: 45px;
     cursor: pointer;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #008000;
+    color: #807300;
 }
 .fab {
     color: #000000;
@@ -69,13 +75,4 @@
 #footer {
     background-color: #808080;
     text-align: center;
-}
-
-/* spacing on all sections */
-#about, #services, #portfolio, #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
-}
-#contact {
-    padding-bottom: 4rem;
 }
