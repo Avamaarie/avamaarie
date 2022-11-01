@@ -104,14 +104,14 @@
         <div class="polaroid">
             <img src="images/Screen Shot 2022-10-25 at 7.12.20 PM.png" alt="Norther Lights" style="width:100%">
             <div class="container">
-            <p>s</p>
+            <p></p>
             </div>
           </div>
         
         <div class="polaroid">
           <img src="images/Duluth, MN road:buiding costs.pdf" alt="Norther Lights" style="width:100%">
           <div class="container">
-          <p>s</p>
+          <p></p>
           </div>
         </div>
         
@@ -199,21 +199,31 @@
     <title>Contact Form</title>
 </head>
 <body>
-
+    
     <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        <input type="text" class="form-control form-control-lg" placeholder="Name">
-        <input type="email" class="form-control mt-3" placeholder="Email">
-        <input type="text" class="form-control mt-3" placeholder="Subject">
-        <div class="mb-3 mt-3">
-            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-       
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
         <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-     
-                </div>
-
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
             </div>
         </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+       
+        </div>
+</body>
+</html>
+        </div>
+        
     </section>
     <!-- footer section-->
     <footer id="footer">
