@@ -14,10 +14,35 @@
 </head>
 
 <body>
+
+    <!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+<body>
+
+<div class="w3-card-4">
+<div class="w3-container w3-theme w3-card">
+  <h1>Welcome To My Portfolio</h1>
+</div>
+
+<div class="w3-container w3-text-theme">
+<h2></h2>I am a data analyst and landscape architect.</div>
+
+
+</ul>
+</div>
+
+</body>
+</html>
     <!-- navbar -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <div class="topnav" id="myTopnav">
+
+  <li class="w3-theme-l3">
       <a href="#home" class="active">Home</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
@@ -32,8 +57,8 @@
         <div class="container-fluid">
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Welcome To My Portfolio</h2>
-                <p class="hero_desc">I am a data analyst and landscape architect.</p>
+                <h2 class="hero_title"></h2>
+                <p class="hero_desc"></p>
             </div>
             </div>
         </div>
@@ -46,12 +71,13 @@
             <h1 class="text-right">About Me</h1> 
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <img src="images/92539825.jpeg" class= "imageAboutPage" alt="">
+                    
+                    <img src="images/92539825.jpeg"<img style='height: 100%; width: 100%; object-fit: contain'/>
                 </div>
 
                 <div class="col-lg-8">
                     
-                    
+                         
 <p> A graduate from Michigan State University who worked for, and obtained a B.S degree in Environmental Geography, as well as, double minor in both 'Cities: Environment, Design, and Society' and 'Spanish Language'. Works with arcGIS, autoCADD, Microsoft Excel/Office, Github, and Mapbox.</p>
                         
                     </p>
@@ -197,33 +223,38 @@
                     <!DOCTYPE html>
 <head>
     <title>Contact Form</title>
-</head>
-<body>
-    
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-       
-        </div>
-</body>
-</html>
-        </div>
-        
+    <h1></h1>
+    <form class="cf">
+        <form
+        action="https://formspree.io/f/meqdpboj"
+        method="POST"
+      >
+      <div class="half left cf">
+        <input type="text" id="input-name" placeholder="Name">
+        <input type="email" id="input-email" placeholder="Email address">
+        <input type="text" id="input-subject" placeholder="Subject">
+      </div>
+      <div class="half right cf">
+        <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+      </div>  
+      <input type="submit" value="Submit" id="input-submit">
+    </form>
+    <form
+  action="https://formspree.io/f/meqdpboj"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+
     </section>
     <!-- footer section-->
     <footer id="footer">
